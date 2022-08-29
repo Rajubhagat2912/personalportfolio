@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Satisfy&family=Silkscreen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar {
+    background-color: black;
+    height: 100vh;
+    transition: transform 0.3s ease-in;
+    position: absolute;
+}
+
+.sidebar nav {
+    padding: 45px;
+}
+
+.sidebar nav li {
+    list-style: none;
+    font-size: 20px;
+    padding: 33px 0;
+}
+
+.sidebar nav li a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.664);
+}
+
+.sidebar nav li a:hover {
+    color: white;
+}
+
+.main {
+    /*background-color: yellow; */
+    background-color: black;
+}
+
+
+/* Slideshow container */
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+
+/* Hide the images by default */
+
+.mySlides {
+    display: none;
+}
+
+
+/* The dots/bullets/indicators */
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+
+/* Fading animation */
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+.contanier {
+    display: flex;
+}
+
+.infocontanier {
+    background-color: red;
+    height: 60vh;
+    width: 80vw;
+    margin: 147px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+span {
+    color: crimson;
+}
+
+.hambarger {
+    position: absolute;
+    cursor: pointer;
+    top: 15px;
+    left: 10px;
+}
+
+.cross {
+    margin-left: 130px;
+    margin-top: 10px;
+}
+
+.ham {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.sidebargo {
+    transform: translate(-443px, 0px);
+    position: absolute;
+}
+
+
+/* about my resume */
+
+.intro {
+    background-color: white;
+}
+
+.about {
+    width: 1000vw;
+    padding: 100px 0px;
+    background-color: white;
+}
+
+h1 {
+    margin: 23px;
+    font-family: 'Silkscreen', cursive;
+    font-size: 4em;
+    color: rgb(17, 5, 5);
+}
+
+h2 {
+    margin: 1em;
+    font-family: 'Cinzel', serif;
+    font-size: 25px;
+    color: black;
+}
+
+p {
+    color: rgb(5, 2, 2);
+    margin: 23px;
+    font-size: 1.5em;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-family: 'EB Garamond', serif;
+}
+
+.btn {
+    margin-top: 34px;
+}
+
+.btn button {
+    padding: 9px 14px;
+    border-radius: 22px;
+    color: white;
+    background-color: #00f968;
+    font-size: 17px;
+    font-weight: bold;
+    margin: 0 32px;
+    cursor: pointer;
+}
+
+.btn button:hover {
+    background-color: black;
+    color: #00f968;
+}
+
+
+/* services */
+
+.service {
+    background-color: black;
+    color: white;
+    width: 100vw;
+}
+
+.title h2 {
+    font-family: 'Silkscreen', cursive;
+    font-size: 55px;
+    width: 1130px;
+    margin: 30px auto;
+    text-align: center;
+    color: white;
+}
+
+h5 {
+    text-align: center;
+    font-size: 30px;
+}
+
+.pra p {
+    font-size: 15px;
+    font-family: 'Cinzel', serif;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+
+.card {
+    height: 365px;
+    width: 335px;
+    padding: 20px 35px;
+    background: #358bd1;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.card img {
+    width: 60px;
+    height: 60px;
+    text-align: center;
+}
+
+.hambarger {
+    position: absolute;
+    cursor: pointer;
+    top: 15px;
+    left: 10px;
+}
+
+.cross {
+    margin-left: 130px;
+    margin-top: 10px;
+}
+
+.ham {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.sidebargo {
+    transform: translate(-443px, 0px);
+    position: absolute;
+}
+
+
+/* footer line */
+
+footer {
+    position: absolute;
+    position: relative;
+    width: 100vw;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+.social {
+    display: flex;
+}
+
+.social a img {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f0e7ea;
+    border-radius: 50%;
+    margin: 10px;
+    color: black;
+    text-decoration: none;
+}
+
+.social a:hover {
+    transform: scale(1.3);
+    transition: .3s;
+}
+
+.end {
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 50px;
+}

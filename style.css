@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Satisfy&family=Silkscreen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar {
+    background-color: black;
+    height: 100vh;
+    transition: transform 0.3s ease-in;
+    position: absolute;
+}
+
+.sidebar nav {
+    padding: 45px;
+}
+
+.sidebar nav li {
+    list-style: none;
+    font-size: 20px;
+    padding: 33px 0;
+}
+
+.sidebar nav li a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.664);
+}
+
+.sidebar nav li a:hover {
+    color: white;
+}
+
+.main {
+    background-color: #12172b;
+    width: 1000vw;
+    align-items: center;
+}
+
+.contanier {
+    display: flex;
+}
+
+.infocontanier {
+    /*  background-color: rgb(94, 139, 221); */
+    height: 50vh;
+    width: 80vw;
+    margin: 147px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.devinfo {
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.wrapper {
+    display: flex;
+}
+
+.wrapper .static-txt {
+    color: white;
+    font-size: 60px;
+    font-weight: 400;
+}
+
+.wrapper .dynamic-txts {
+    margin-left: 15px;
+    height: 90px;
+    line-height: 90px;
+    overflow: hidden;
+}
+
+.dynamic-txts li {
+    list-style: none;
+    color: #FC6D6D;
+    font-size: 60px;
+    font-weight: 500;
+    position: relative;
+    top: 0;
+    animation: slide 12s steps(4) infinite;
+}
+
+@keyframes slide {
+    100% {
+        top: -360px;
+    }
+}
+
+.dynamic-txts li span {
+    position: relative;
+    margin: 5px 0;
+    line-height: 80px;
+}
+
+.dynamic-txts li span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #12172b;
+    border-left: 2px solid #FC6D6D;
+    animation: typing 3s steps(10) infinite;
+}
+
+@keyframes typing {
+    40%,
+    60% {
+        left: calc(100% + 30px);
+    }
+    100% {
+        left: 0;
+    }
+}
+
+.btn {
+    margin: 20px;
+}
+
+.btn button {
+    padding: 9px 14px;
+    border-radius: 22px;
+    color: white;
+    background-color: #00f968;
+    font-size: 17px;
+    font-weight: bold;
+    margin: 0 32px;
+    cursor: pointer;
+}
+
+.btn button:hover {
+    background-color: black;
+    color: #00f968;
+}
+
+.devpic img {
+    height: 60vh;
+}
+
+span {
+    color: crimson;
+}
+
+.hambarger {
+    position: absolute;
+    cursor: pointer;
+    top: 15px;
+    left: 10px;
+}
+
+.cross {
+    margin-left: 130px;
+    margin-top: 10px;
+}
+
+.ham {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.sidebargo {
+    transform: translate(-443px, 0px);
+    position: absolute;
+}
+
+
+/* contct for me */
+
+.contactform {
+    font-family: 'Cinzel', serif;
+    padding-top: 144px;
+    padding: 0 34px;
+    color: white;
+    margin: 80px 88px;
+}
+
+.contactform h1 {
+    font-family: 'Silkscreen', cursive;
+    padding: 12px 0;
+    color: white;
+    font-size: 2em;
+}
+
+.contactform div {
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactform div input {
+    width: 26vw;
+    border-radius: 5px;
+    margin: 6px 0 0 0;
+    padding: 3px;
+}
+
+#emailHelp {
+    font-size: 12px;
+    color: #00f968;
+    margin: 0 5px;
+    padding: 3px 0 0 0;
+    font-weight: bold;
+}
+
+#form-check {
+    flex-direction: row;
+}
+
+#form-check input {
+    width: 20px;
+    margin: 3px 0;
+}
+
+
+/* footer line */
+
+footer {
+    position: absolute;
+    position: relative;
+    width: 100vw;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+.social {
+    display: flex;
+}
+
+.social a img {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border-radius: 50%;
+    margin: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.social a:hover {
+    transform: scale(1.3);
+    transition: .3s;
+}
+
+.end {
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
